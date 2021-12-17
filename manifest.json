@@ -1,0 +1,24 @@
+{
+    "name": "去除百度广告",
+    "version": "329",
+    "manifest_version": 2,
+    "description": "哈哈哈哈哈哈哈哈",
+    "icons": {
+        "128": "icons/001.png"
+    },
+    "browser_action": {
+    }
+    ,
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.baidu.com/*"
+            ],
+            "js":[
+                "lib/moveAd.js"
+            ],
+            "run_at":"document_start"
+        }
+    ]
+
+}
